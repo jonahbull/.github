@@ -1,0 +1,17 @@
+# Octo STS policy for Autofix in the jonahbull dev environment.
+# Service account: autofix@jonahbull-dev.iam.gserviceaccount.com
+# Deployed by env/dev/jonahbull/400-autofix in chainguard-dev/mono.
+# Permissions match chainguard-dev/.github's autofix.sts.yaml.
+issuer: https://accounts.google.com
+subject: "105521936566508558529"
+
+permissions:
+  actions: read
+  checks: write
+  contents: write
+  pull_requests: write # Label PRs with the identity, sampled and skip labels.
+  statuses: read
+  workflows: write # Allow triggering actions when authoring commits.
+
+repositories:
+  - mono
