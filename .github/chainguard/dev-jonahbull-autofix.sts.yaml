@@ -15,3 +15,4 @@ permissions:
 
 repositories:
   - mono
+  - autofix-sandbox
